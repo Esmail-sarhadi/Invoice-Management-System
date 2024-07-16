@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="vqq11CWNVkLVnZvjCeZReKc8-FRmgxek2SOWjr35CbY" />
+    <link rel="shortcut icon" type="image/png" href="android-chrome-512x512.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Invoice Management System | Invoice-Management-System</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Invoice Management System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This repository contains a simple invoice management system written in C++. It allows users to add new products, create invoices, and perform various operations such as viewing invoices by date, finding the date with the most customers, determining the best selling day, viewing the price of specific products, and checking monthly and annual income." />
+<meta property="og:description" content="This repository contains a simple invoice management system written in C++. It allows users to add new products, create invoices, and perform various operations such as viewing invoices by date, finding the date with the most customers, determining the best selling day, viewing the price of specific products, and checking monthly and annual income." />
+<link rel="canonical" href="https://esmail-sarhadi.github.io/Invoice-Management-System/" />
+<meta property="og:url" content="https://esmail-sarhadi.github.io/Invoice-Management-System/" />
+<meta property="og:site_name" content="Invoice-Management-System" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Invoice Management System" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"This repository contains a simple invoice management system written in C++. It allows users to add new products, create invoices, and perform various operations such as viewing invoices by date, finding the date with the most customers, determining the best selling day, viewing the price of specific products, and checking monthly and annual income.","headline":"Invoice Management System","name":"Invoice-Management-System","url":"https://esmail-sarhadi.github.io/Invoice-Management-System/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/Invoice-Management-System/assets/css/style.css?v=d31470e25e59c40e8752f197fb81181734b15e7d">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Invoice-Management-System/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://esmail-sarhadi.github.io/Invoice-Management-System/">Invoice-Management-System</a></h1>
+      
+
+      
+<h1 id="invoice-management-system">Invoice Management System</h1>
+
+<p>This project is a simple invoice management system implemented in C++. It provides functionalities for adding new products, creating invoices, and viewing various reports related to sales and products.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>Add New Product</strong>: Allows the user to add a new product with a unique code, name, and price.</li>
+  <li><strong>Create Invoice</strong>: Enables the user to create a new invoice with a specific date and a list of items.</li>
+  <li><strong>View Invoices by Date</strong>: Displays all invoices for a specific date.</li>
+  <li><strong>Find Date with Most Customers</strong>: Identifies the date with the highest number of customers.</li>
+  <li><strong>Find Best Selling Day</strong>: Determines the day with the highest sales.</li>
+  <li><strong>View Product Price</strong>: Shows the price of a specific product based on its code.</li>
+  <li><strong>View Income</strong>: Displays monthly and annual income.</li>
+</ul>
+
+<h2 id="file-structure">File Structure</h2>
+
+<ul>
+  <li><strong>main.cpp</strong>: The main source file containing all the code.</li>
+  <li><strong>products.txt</strong>: A text file used to store product information.</li>
+  <li><strong>invoices.txt</strong>: A text file used to store invoice information.</li>
+</ul>
+
+<h2 id="how-to-use">How to Use</h2>
+
+<ol>
+  <li><strong>Clone the repository</strong>:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone https://github.com/Esmail-sarhadi/invoice-management-system.git
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Navigate to the project directory</strong>:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd </span>invoice-management-system
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Compile the code</strong>:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> g++ <span class="nt">-o</span> invoice_system main.cpp
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Run the program</strong>:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ./invoice_system
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="menu-options">Menu Options</h2>
+
+<ul>
+  <li><strong>1. Add New Invoice</strong>: Enter invoice number, date, and product details to create a new invoice.</li>
+  <li><strong>2. Add New Product</strong>: Enter product code, name, and price to add a new product.</li>
+  <li><strong>3. View Invoices by Date</strong>: Enter a date to view all invoices for that day.</li>
+  <li><strong>4. Find Date with Most Customers</strong>: Display the date with the highest number of customers.</li>
+  <li><strong>5. Find Best Selling Day</strong>: Show the day with the highest sales.</li>
+  <li><strong>6. View Product Price</strong>: Enter the product code to view its price.</li>
+  <li><strong>7. View Monthly and Annual Income</strong>: Display the income for each month and year.</li>
+  <li><strong>8. Exit</strong>: Exit the program.</li>
+</ul>
+
+<h2 id="data-storage">Data Storage</h2>
+
+<ul>
+  <li><strong>Products</strong>: Stored in <code class="language-plaintext highlighter-rouge">products.txt</code> in the format:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  code-name-price
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Invoices</strong>: Stored in <code class="language-plaintext highlighter-rouge">invoices.txt</code> in the format:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  number-date-itemCount productCode1 quantity1 productCode2 quantity2 ...
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<h3 id="adding-a-product">Adding a Product</h3>
+
+<ol>
+  <li>Select option <code class="language-plaintext highlighter-rouge">2</code> from the menu.</li>
+  <li>Enter the product code, name, and price.</li>
+</ol>
+
+<h3 id="creating-an-invoice">Creating an Invoice</h3>
+
+<ol>
+  <li>Select option <code class="language-plaintext highlighter-rouge">1</code> from the menu.</li>
+  <li>Enter the invoice number, date, and items with their quantities.</li>
+</ol>
+
+<h3 id="viewing-invoices-by-date">Viewing Invoices by Date</h3>
+
+<ol>
+  <li>Select option <code class="language-plaintext highlighter-rouge">3</code> from the menu.</li>
+  <li>Enter the date in <code class="language-plaintext highlighter-rouge">yyyy/mm/dd</code> format.</li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License. See the <a href="/Invoice-Management-System/LICENSE">LICENSE</a> file for details.</p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.</p>
+<h2 id="profile">Profile</h2>
+
+<p>Check out my GitHub profile: <a href="https://github.com/Esmail-sarhadi" target="_blank">Esmail Sarhadi</a></p>
+
+<h2 id="project-link">Project Link</h2>
+
+<p>View this project on GitHub: <a href="https://github.com/Esmail-sarhadi/Invoice-Management-System" target="_blank">Invoice-Management-System</a></p>
+
+<h2 id="donation">Donation</h2>
+
+<p>If you find this project helpful, consider making a donation:</p>
+<p><a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&source=lk_donation&medium=referral" target="_blank">
+     <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
+</a></p>
+<h2 id="contact">Contact</h2>
+
+<p>For any inquiries or feedback, please contact [sarhadiesmail@gmail.com]</p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/Esmail-sarhadi/Invoice-Management-System/edit/main/README.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
